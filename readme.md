@@ -65,6 +65,23 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
   3. Entrer l'URL : `https://jsonplaceholder.typicode.com/posts/1/comments`.
   4. Cliquer sur "Send".
 - **Résultat attendu** : Une liste de commentaires associés au post ID 1.
+[
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "Commentateur 1",
+    "email": "comment1@example.com",
+    "body": "Ceci est un commentaire."
+  },
+  {
+    "postId": 1,
+    "id": 2,
+    "name": "Commentateur 2",
+    "email": "comment2@example.com",
+    "body": "Ceci est un autre commentaire."
+  }
+]
+
 
 ---
 
