@@ -80,6 +80,8 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
     "title": "Titre mis à jour",
     "body": "Contenu mis à jour"
   }
+  
+---
 
 ### 4. Requête GET pour les commentaires du post ID 1
 - **Méthode** : `GET`
