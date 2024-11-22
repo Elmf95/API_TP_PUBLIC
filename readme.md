@@ -36,7 +36,7 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
     "email": "comment2@example.com",
     "body": "Ceci est un autre commentaire."
   }
- ```json
+```
 ---
 
 ### 2. Requête POST sur les todos
