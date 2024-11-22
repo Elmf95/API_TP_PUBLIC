@@ -20,23 +20,8 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
   2. Sélectionner `GET` comme méthode.
   3. Entrer l'URL : `https://jsonplaceholder.typicode.com/comments`.
   4. Cliquer sur "Send".
-- **Résultat attendu** :
-  ```json
-  {
-    "postId": 1,
-    "id": 1,
-    "name": "Commentateur 1",
-    "email": "comment1@example.com",
-    "body": "Ceci est un commentaire."
-  },
-  {
-    "postId": 1,
-    "id": 2,
-    "name": "Commentateur 2",
-    "email": "comment2@example.com",
-    "body": "Ceci est un autre commentaire."
-  }
-```
+- **Résultat attendu** : Une liste de commentaires sous forme de JSON.
+
 ---
 
 ### 2. Requête POST sur les todos
@@ -57,13 +42,7 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
      - `completed`: `false`
      - `userId`: `1`
   7. Cliquer sur "Send".
-- **Résultat attendu** :
-{
-  "title": "Apprendre Postman",
-  "completed": false,
-  "userId": 1,
-  "id": 201
-}
+- **Résultat attendu** : Un objet JSON confirmant la création de la todo.
 
 ---
 
@@ -76,8 +55,6 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
     "title": "Titre mis à jour",
     "body": "Contenu mis à jour"
   }
-  
----
 
 ### 4. Requête GET pour les commentaires du post ID 1
 - **Méthode** : `GET`
@@ -87,24 +64,7 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
   2. Sélectionner `GET` comme méthode.
   3. Entrer l'URL : `https://jsonplaceholder.typicode.com/posts/1/comments`.
   4. Cliquer sur "Send".
-- **Résultat attendu** :Une liste de photos affiliées à l’album numéro 1
-```json
-{
-    "postId": 1,
-    "id": 1,
-    "name": "Commentateur 1",
-    "email": "comment1@example.com",
-    "body": "Ceci est un commentaire."
-  },
-  {
-    "postId": 1,
-    "id": 2,
-    "name": "Commentateur 2",
-    "email": "comment2@example.com",
-    "body": "Ceci est un autre commentaire."
-  }
-```json
-
+- **Résultat attendu** : Une liste de commentaires associés au post ID 1.
 
 ---
 
@@ -117,20 +77,4 @@ Ce TP consiste à utiliser **Postman** pour effectuer des requêtes HTTP sur une
   3. Entrer l'URL : `https://jsonplaceholder.typicode.com/albums/2/photos`.
   4. Cliquer sur "Send".
 - **Résultat attendu** : Une liste de photos affiliées à l’album numéro 2.
-```json
-  {
-    "albumId": 2,
-    "id": 51,
-    "title": "Photo 1 de l'album 2",
-    "url": "https://via.placeholder.com/600/92c952",
-    "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-  },
-  {
-    "albumId": 2,
-    "id": 52,
-    "title": "Photo 2 de l'album 2",
-    "url": "https://via.placeholder.com/600/771796",
-    "thumbnailUrl": "https://via.placeholder.com/150/771796"
-  }
-```json
 
